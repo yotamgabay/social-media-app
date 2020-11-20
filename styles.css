@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#post-form{
+    width: 45%;
+    margin: 0 auto;
+}
+#username-form{
+    font-family: 'Roboto', sans-serif;
+    width:40%;
+    padding:10px;
+}
+#body-form{
+    font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-size: 200%;
+    word-break: keep-all;
+    height:100%;
+    padding:15px;
+    resize: none;
+}
+#submit-button{
+    background-color: blueviolet;
+    border-color: blueviolet;
+    width:20%;
+}
+#all-posts{
+    word-break: keep-all;
+    width:45%;
+    margin: 0 auto;
+    padding: 20px;
+}
+#all-posts > div{
+    padding:30px;
+    border-radius: 8px;
+    margin-top:2vh;
+    border:1px solid #d1d1d1;
+}
+#all-posts > div > h3{
+}
+#all-posts > div > small{
+    color:rgb(75, 75, 75);
+    font-weight: bold;
+}
+#all-posts > div > p{
+    font-size:140%;
+}
