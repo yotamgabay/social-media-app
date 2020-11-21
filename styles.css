@@ -25,7 +25,8 @@ body{
 #submit-button{
     background-color: blueviolet;
     border-color: blueviolet;
-    width:20%;
+    text-align:center;
+    margin:0 auto;
 }
 #all-posts{
     word-break: keep-all;
