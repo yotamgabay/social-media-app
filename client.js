@@ -10,7 +10,7 @@ if(localStorage.getItem("username") != null){
     document.getElementById('navbarlogin').href = '/'
     document.getElementById('navbarlogin').onclick = function(){
         localStorage.removeItem('username');
-        location.reload();
+        location.replace("./index.html");
     }
     document.getElementById('post-form').style.display = "relative"
 }
