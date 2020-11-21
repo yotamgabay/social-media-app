@@ -1,11 +1,10 @@
-console.log('aawa')
-const api_url = window.location.hostname == 'localhost' ? "http://localhost:5000/posts" : 'https://yotam-social-media.herokuapp.com/posts';
+const api_url = "http://localhost:5000/posts"
+//const api_url = window.location.hostname == 'localhost' ? "http://localhost:5000/posts" : 'https://yotam-social-media.herokuapp.com/posts';
 const form = document.getElementById('post-form');
 const postsDiv = document.getElementById('all-posts');
 
 // load all posts from database
 showAllPosts();
-
 // send post to back-end
 form.addEventListener('submit',(event)=>{
     event.preventDefault();
@@ -32,9 +31,9 @@ form.addEventListener('submit',(event)=>{
 // request all posts from API
 function showAllPosts(){
     postsDiv.innerHTML = '';
-    fetch(api_url)
-        .then(response => response.json())
+    fetch(api_url).then(response => response.json())
         .then(allPosts =>{
+            console.log(allPosts)
             allPosts.reverse();
             allPosts.forEach(currentPost => {
                 createPost(currentPost);
