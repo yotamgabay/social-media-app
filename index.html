@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a id="navbarposts" href="#all-posts">Posts</a>
+        <a id="navbarupload"href="#upload">Upload</a>
+        <a id="navbaruser"href="#about" onclick="dropdownuser()">User</a>
+        <a id="navbarlogin"href="./login.html">Login</a>
+    </div>
+<section id="upload">
+    <form class="formstyle" id="post-form" style="padding-top:10vh;">
+        <!--<input class="u-full-width" name="name" id="username-form" placeholder="Name" type="text" autocomplete="off" required>
+        -->
+        <h5 for="body-form">Create new post:</h5>
+        <textarea class="u-full-width" name="body" id="body-form" cols="30" rows="6" maxlength="200" placeholder="Post body" required></textarea>
+        <button id="submit-button" class="button-primary">Post</button>
+    </form>
+</section>
+<hr width="45%" style="background-color: black; height:2px; margin-bottom: -2vh;">
+<div id="all-posts">
+
+</div>
+</body>
+</html>

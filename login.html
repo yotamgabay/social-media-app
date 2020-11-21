@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script defer src="login.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+<div id="login-container">
+    <form class="formstyle" id="login-form">
+        <h1>Login to your account</h1>
+        <br>
+        <label for="name">Username:</label>
+        <input class="u-full-width" name="name" id="login-username-form" placeholder="Name" type="text" autocomplete="off" required>
+        <label for="name">Password:</label>
+        <input class="u-full-width" name="password" id="login-password-form" placeholder="Password" autocomplete="off" type="password" required>
+        <p id="login-status"></p>
+        <button id="submit-button" class="button-primary">Login</button>
+        <a style="float:right"href="signup.html">Don't have an account? Sign up here</a>
+    </form>
+</div>
+</body>
+</html>
