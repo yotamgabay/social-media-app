@@ -7,10 +7,9 @@ const postsDiv = document.getElementById('all-posts');
 if(localStorage.getItem("username") != null){
     document.getElementById('navbaruser').textContent = localStorage.getItem("username");
     document.getElementById('navbarlogin').textContent = "Logout"
-    document.getElementById('navbarlogin').href = '/'
+    document.getElementById('navbarlogin').href = 'index.html'
     document.getElementById('navbarlogin').onclick = function(){
         localStorage.removeItem('username');
-        location.replace("./index.html");
     }
     document.getElementById('post-form').style.display = "relative"
 }
