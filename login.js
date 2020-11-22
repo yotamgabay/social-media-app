@@ -20,7 +20,7 @@ form.addEventListener('submit',(event)=>{
         }
     }).then(response => response.json()).then(status =>{
         if(status.success){
-            localStorage.setItem("username",status.username);
+            sessionStorage.setItem("username",status.username);
             form.reset();
             loginStatusP.style.color = "green";
             loginStatusP.textContent = status.message;
