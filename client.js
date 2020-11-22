@@ -5,7 +5,7 @@ const postsDiv = document.getElementById('all-posts');
 
 //get username
 if(sessionStorage.getItem("username") != null){
-    document.getElementById('navbaruser').textContent = localStorage.getItem("username");
+    document.getElementById('navbaruser').textContent = sessionStorage.getItem("username");
     document.getElementById('navbarlogin').textContent = "Logout"
     document.getElementById('navbarlogin').href = 'index.html'
     document.getElementById('navbarlogin').onclick = function(){
