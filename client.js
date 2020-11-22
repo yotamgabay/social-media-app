@@ -4,12 +4,12 @@ const form = document.getElementById('post-form');
 const postsDiv = document.getElementById('all-posts');
 
 //get username
-if(localStorage.getItem("username") != null){
+if(sessionStorage.getItem("username") != null){
     document.getElementById('navbaruser').textContent = localStorage.getItem("username");
     document.getElementById('navbarlogin').textContent = "Logout"
     document.getElementById('navbarlogin').href = 'index.html'
     document.getElementById('navbarlogin').onclick = function(){
-        localStorage.removeItem('username');
+        sessionStorage.removeItem('username');
     }
     document.getElementById('post-form').style.display = "relative"
 }
@@ -25,9 +25,9 @@ showAllPosts();
 // send post to back-end
 form.addEventListener('submit',(event)=>{
     event.preventDefault();
-    if(localStorage.getItem("username")!= null){
+    if(sessionStorage.getItem("username")!= null){
         const formData = new FormData(form);
-        const name = localStorage.getItem("username");
+        const name = sessionStorage.getItem("username");
         const body = formData.get('body');
         const post = {
             name,
